@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title> Clarita Mellejor </title>
+    
+    <style>
+        .link1 {
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #333;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .link1:hover {
+            color: purple;
+            background-color: lightblue;
+        }
+
+        .link1:active {
+            background-color: #a881e3;
+        }
+
+        .link1:focus {
+            outline: 2px solid pink;
+        }
+        
+        .link1:visited {
+            color: hotpink;
+        }
+
+        .link2 {
+            text-decoration: none;
+            padding: 10px;
+            border: 1px solid #333;
+            color: #333;
+            display: inline-block;
+            margin-bottom: 5px;
+        }
+
+        .link2:hover {
+            color: blue;
+            background-color: pink;
+        }
+
+        .link2:active {
+            color: blue;
+            background-color: lightblue;
+        }
+
+        .link2:focus {
+            outline: 2px solid darkblue;
+        }
+        
+        .link2:visited {
+            color: darkblue;
+        }
+        #div1 {
+            font-size: 50px;
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        #div2 {
+            font-size: 50px;
+            width: 300px;
+            height: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: 2px solid black;
+            transition: border 0.3s;
+        }
+        #div1:target {
+            color: white;
+            background-color: lightpink;
+        }
+        #div2:target {
+            color: darkblue;
+            background-color: lightblue;
+            border: 15px dotted hotpink;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+        <a href= "#div1" class="link1">LINK 1</a>
+        <a href= "#div2" class="link2">LINK 2</a>
+    
+        <div id="div1">Div 1 HERE</div>
+        <div id="div2">Div 2 HERE</div>
+    
+</body>
+</html>
